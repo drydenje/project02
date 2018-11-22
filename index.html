@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 2: Invoice Creation Tool</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="invoiceWrapper">
+            <section class="addItemLine">
+                    <form id="formLineAdder">
+                        <div>Enter information to add an item</div>
+                        <div>
+                            <label for="itemName">Name:</label>
+                            <input type="text" name="itemName" id="itemName" placeholder="Item Name">
+                        </div>
+                        <div>
+                            <label for="itemLineNumber">Line number:</label>
+                            <input type="text" name="itemLineNumber" id="itemLineNumber" placeholder="Line Number">
+                        </div>
+                        <div>
+                                <label for="itemUnitCost">Cost per unit:</label>
+                                <input type="text" name="itemUnitCost" id="itemUnitCost" placeholder="Cost per Unit">
+                        </div>
+                        <div>
+                                <label for="itemQuantity">Quantity:</label>
+                                <input type="text" name="itemQuantity" id="itemQuantity" placeholder="Quantity">
+                        </div>
+                        <div>
+                                <label for="itemDescription">Description:</label>
+                                <input type="text" name="itemDescription" id="itemDescription" placeholder="Description">
+                        </div>
+                        <input type="submit" value="Add Item">
+                </form>
+            </section>
+        <header>
+            <h1>Invoice</h1>
+            <div class="contact">
+                <div class="contactPhone">647-444-1234</div>
+                <div class="contactEmail">billing@hackeryou.com</div>
+                <div class="contactWebsite">hackeryou.com</div>
+            </div>
+            <div class="address">
+                <div class="addressStreet">483 Queen St W</div>
+                <div class="addressCityStateCountry">Toronto, ON, Canada</div>
+                <div class="addressZipCode">M5V 2A9</div>
+            </div>
+        </header>
+        <section class="invoiceInfo">
+            <div class="invoiceBilledTo">
+                <div class="invoiceClientName"></div>
+                <div class="invoiceClientAddress"></div>
+                <div class="invoiceCityStateCountry"></div>
+                <div class="invoiceZipCode"></div>
+            </div>
+            <div class="invoiceData">
+                <div class="invoiceNumber"></div>
+                <div class="invoiceDate"></div>
+            </div>
+            <div class="invoiceTotal"></div>
+        </section>
+        <main>
+            <ul class="invoiceItemsList">
+                
+            </ul>
+            <div class="invoiceSubtotal"></div>
+            <div class="invoiceTax"></div>
+        </main>
+    </div>  <!-- End of invoiceWrapper -->
+
+    <!-- This uses a local copy, so I can work on the train ride to school -->
+    <script src="jquery-3.3.1.min.js" ></script>
+    <script src="./main.js"></script>
+</body>
+</html>

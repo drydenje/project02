@@ -1,0 +1,73 @@
+form * {
+    /* border: 1px solid lightgray; */
+}
+
+div.invoiceWrapper {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    /* margin: 10px; */
+}
+
+header h1 {
+    flex: 1 0 auto;
+    /* margin: 10px; */
+}
+
+header div.contact, header div.address {
+    margin: 20px;
+}
+
+section.invoiceInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+section.invoiceInfo div.invoiceTotal {
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+div.invoiceBilledTo, div.invoiceData {
+    margin: 10px;
+}
+
+.invoiceLine {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.invoiceLine div {
+    margin: 0px 10px;
+}
+
+.invoiceLine .itemDescription {
+    flex: 1 0 auto;
+}
+.invoiceSubtotal, .invoiceTax {
+    text-align: right;
+}
+
+#formLineAdder {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #fff;
+}
+
+#formLineAdder div input {
+    width: 80%;
+    padding: 5px 0px;
+    background-color: #fff;
+    margin: 5px;
+}
